@@ -1,0 +1,15 @@
+user defined exception
+i)write a program to accept the number from user and to display exception when user enters the number greater than 10
+package exception;
+
+public class NumberException extends Exception 
+{
+public NumberException()
+{
+	System.out.println();
+}
+NumberException(String message)
+{
+	super(message);
+}
+}
