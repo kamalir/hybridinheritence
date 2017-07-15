@@ -1,5 +1,37 @@
 user defined exception
 i)write a program to accept the number from user and to display exception when user enters the number greater than 10
+package collection;
+
+import java.util.Scanner;
+
+public class UserDefined {
+	public static void main(String a[])
+	{
+		int num;
+		Scanner sin=new Scanner(System.in);
+			System.out.println("enter number");
+			num=sin.nextInt();
+			if(num>=10)
+			{
+			try
+			{
+				throw new NumberException("num should not be greter than 10");
+			}
+		
+
+		catch(NumberException ee)
+		{
+		System.out.println("exception raised");	
+		}
+	}
+
+
+	else
+	{
+		System.out.println("number entered is"+num);
+	}
+}
+}
 package exception;
 
 public class NumberException extends Exception 
